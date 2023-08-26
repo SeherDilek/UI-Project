@@ -1,4 +1,4 @@
-﻿namespace CurveGenerator_UI
+﻿namespace CurveGeneratorUI
 {
     partial class MainForm
     {

@@ -7,7 +7,7 @@ using System.Linq;
 
 using Model;
 
-namespace CurveGenerator_UI
+namespace CurveGeneratorUI
 {
     public partial class MainForm : Form
     {

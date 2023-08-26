@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelTests", "ModelTests\ModelTests.csproj", "{C64B1C6E-998B-47B4-9BC4-D2F1868E0B83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurveGenerator-UI", "CurveGenerator-UI\CurveGenerator-UI.csproj", "{00E5DA08-25D2-41AC-B556-B440D359BD11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurveGeneratorUI", "CurveGeneratorUI\CurveGeneratorUI.csproj", "{00E5DA08-25D2-41AC-B556-B440D359BD11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6FDCCFA-AA0A-48E2-8F53-E85D8AEF95C2}"
 	ProjectSection(SolutionItems) = preProject

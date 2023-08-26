@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 using Model;
 
-namespace CurveGenerator_UI
+namespace CurveGeneratorUI
 {
     public class Utility
     {
