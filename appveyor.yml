@@ -1,8 +1,20 @@
 version: 0.0.{build}
 image: Visual Studio 2017
+configuration: Release
 
 before_build:
 - ps: nuget restore
   
 build:
   verbosity: minimal
+
+after_test:
+  - ps: |
+      New-Item -Name UIProject -ItemType "directory"
+      Copy-Item -Path Release\Models.dll -Destination UIProject
+      Copy-Item -Path Release\CurveGeneratorUI.exe -Destination UIProject
+      7z a -snl UIProject.zip UIProject
+
+artifacts:
+- path: UIProject.zip
+  name: UIProject
