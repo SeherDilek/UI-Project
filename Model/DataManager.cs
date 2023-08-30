@@ -13,7 +13,7 @@ namespace Model
             this.value = value;
         }
 
-        public double? GetValue()
+        public double GetValue()
         {
             return value;
         }
@@ -23,7 +23,7 @@ namespace Model
             this.value = value;
         }
 
-        public double? GetValueWithUnit(double unitMultiplier)
+        public double GetValueWithUnit(double unitMultiplier)
         {
             return value * unitMultiplier;
         }
@@ -55,20 +55,14 @@ namespace Model
             if (parameters.TryGetValue(name, out var parameter))
                 return parameter;
 
-            throw new Exception("Given parameter can not be found.");
+            return null;
         }
 
         public void SetParameterValue(string name, double value)
         {
-            try
-            {
-                var parameter = GetParameter(name);
+            var parameter = GetParameter(name);
+            if (parameter != null)
                 parameter.SetValue(value);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
         }
     }
 
